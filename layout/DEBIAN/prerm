@@ -4,12 +4,17 @@ declare -a cydia
 cydia=($CYDIA)
 
 if [[ $1 == remove ]]; then
-    # FIXME: this may need to be changed when we have updates
-    SpireRemover
+    # XXX: this is not a good test as future devices might include siri
+    if [[ "$(uname -m)" == "iPhone4,1" ]]; then
+        echo "Not removing Siri on an iPhone 4S."
+    else
+        # FIXME: this may need to be changed when we have updates
+        SpireRemover
 
-    # force a reboot after uninstallation
-    if [[ ${CYDIA+@} ]]; then
-        eval "echo 'finish:reboot' >&${cydia[0]}"
+        # force a reboot after uninstallation
+        if [[ ${CYDIA+@} ]]; then
+            eval "echo 'finish:reboot' >&${cydia[0]}"
+        fi
     fi
 fi
 
