@@ -2,10 +2,10 @@ Package: com.chpwn.spire
 Name: Spire
 Section: System
 Description: A simple Siri installer.
-Version: 1.0
+Version: 1.1
 Icon: file:///Library/PreferenceBundles/SpirePreferences.bundle/SpirePreferences@2x.png
 Pre-Depends: firmware (>= 5.0), firmware (<< 5.1)
-Conflicts: gsc.ipad, semitether, com.iphonerepocenter.enablemtgesturestheme, com.brbortscheller.homewallpaperkiller, com.brbortscheller.speedbooster, com.iphonerepocenter.disablemultitasking4xtheme, com.modmyi.ipadvoicecontrolenabler, com.modmyi.multitaskingdisabler, com.modmyi.windows7bluepad3as, com.modmyi.windows7bluepadas
+Conflicts: semitether, com.iphonerepocenter.enablemtgesturestheme, com.brbortscheller.homewallpaperkiller, com.brbortscheller.speedbooster, com.iphonerepocenter.disablemultitasking4xtheme, com.modmyi.ipadvoicecontrolenabler, com.modmyi.multitaskingdisabler, com.modmyi.windows7bluepad3as, com.modmyi.windows7bluepadas
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm
 Depiction: http://chpwn.com/cydia/spire.html
